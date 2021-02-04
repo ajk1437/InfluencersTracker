@@ -1,0 +1,223 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Connecting ...
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉> 
+nil
+clj꞉auth꞉> 
+nil
+clj꞉auth꞉> 
+#'auth/oauth2
+clj꞉auth꞉> 
+#'auth/grant-type
+clj꞉auth꞉> 
+#'auth/client-id
+clj꞉auth꞉> 
+#'auth/client-secret
+clj꞉auth꞉> 
+#'auth/get-token
+clj꞉auth꞉> 
+#'auth/content-type
+clj꞉auth꞉> 
+#'auth/authorization
+clj꞉auth꞉> 
+authorization
+"hy5m12prsnt988534bb8ari9iaasvb"
+clj꞉auth꞉> 
+#'auth/access_token
+clj꞉auth꞉> 
+access_token
+"oyoh8b3l816o6m85d2ml3cz9s14q3v"
+clj꞉auth꞉> 
+; Syntax error compiling at (d:\SiRN\Clojure\ISPIT\InfluencersTracker\influencerstracker\src\influencerstracker\auth.clj:23:15).
+; Unable to resolve symbol: baseURL in this context
+clj꞉auth꞉> 
+; Syntax error compiling at (d:\SiRN\Clojure\ISPIT\InfluencersTracker\influencerstracker\src\influencerstracker\auth.clj:23:15).
+; Unable to resolve symbol: baseURL in this context
+clj꞉auth꞉> 
+; Syntax error compiling at (d:\SiRN\Clojure\ISPIT\InfluencersTracker\influencerstracker\src\influencerstracker\auth.clj:23:15).
+; Unable to resolve symbol: baseURL in this context
+clj꞉auth꞉> 
+#'auth/baseURL
+clj꞉auth꞉> 
+#'auth/get-top-games
+clj꞉auth꞉> (get-top-games)
+; Execution error (ExceptionInfo) at slingshot.support/stack-trace (support.clj:201).
+; clj-http: status 404
+clj꞉auth꞉> 
+#'auth/access_token
+clj꞉auth꞉> 
+#'auth/get-top-games
+clj꞉auth꞉> 
+(get-top-games)
+; Execution error (ExceptionInfo) at slingshot.support/stack-trace (support.clj:201).
+; clj-http: status 404
+clj꞉auth꞉> 
+(str "Bearer " access_token)
+"Bearer 6ppovbyukmd1m3ek4st9ufzfqas9m6"
+clj꞉auth꞉> 
+client-id
+"51fsw18ny5mvqfbc93tbmcpqdxx8w4"
+clj꞉auth꞉> content-type
+"application/json"
+clj꞉auth꞉> 
+#'auth/get-top-games
+clj꞉auth꞉> 
+(get-top-games)
+{"data" [{"id" "509658", "name" "Just Chatting", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Just%20Chatting-{width}x{height}.jpg"} {"id" "21779", "name" "League of Legends", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-{width}x{height}.jpg"} {"id" "32399", "name" "Counter-Strike: Global Offensive", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/./Counter-Strike:%20Global%20Offensive-{width}x{height}.jpg"} {"id" "33214", "name" "Fortnite", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Fortnite-{width}x{height}.jpg"} {"id" "512710", "name" "Call of Duty: Warzone", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/./Call%20of%20Duty:%20Warzone-{width}x{height}.jpg"} {"id" "32982", "name" "Grand Theft Auto V", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Grand%20Theft%20Auto%20V-{width}x{height}.jpg"} {"id" "491931", "name" "Escape From Tarkov", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Escape%20From%20Tarkov-{width}x{height}.jpg"} {"id" "516575", "name" "VALORANT", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/VALORANT-{width}x{height}.jpg"} {"id" "511224", "name" "Apex Legends", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Apex%20Legends-{width}x{height}.jpg"} {"id" "518204", "name" "FIFA 21", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/FIFA%2021-{width}x{height}.jpg"} {"id" "27471", "name" "Minecraft", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Minecraft-{width}x{height}.jpg"} {"id" "29595", "name" "Dota 2", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Dota%202-{width}x{height}.jpg"} {"id" "510218", "name" "Among Us", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Among%20Us-{width}x{height}.jpg"} {"id" "18122", "name" "World of Warcraft", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Warcraft-{width}x{height}.jpg"} {"id" "263490", "name" "Rust", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Rust-{width}x{height}.jpg"} {"id" "138585", "name" "Hearthstone", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone-{width}x{height}.jpg"} {"id" "29307", "name" "Path of Exile", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Path%20of%20Exile-{width}x{height}.jpg"} {"id" "743", "name" "Chess", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Chess-{width}x{height}.jpg"} {"id" "491487", "name" "Dead by Daylight", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Dead%20by%20Daylight-{width}x{height}.jpg"} {"id" "498566", "name" "Slots", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Slots-{width}x{height}.jpg"}], "pagination" {"cursor" "eyJzIjoyMCwiZCI6ZmFsc2UsInQiOnRydWV9"}}
+clj꞉auth꞉> 
+; Syntax error macroexpanding clojure.core/ns at (d:\SiRN\Clojure\ISPIT\InfluencersTracker\influencerstracker\src\twitchapi.clj:1:1).
+; (:require [auth :as auth]) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+clj꞉twitchapi꞉> 
+nil
+clj꞉twitchapi꞉> 
+#'twitchapi/a
+clj꞉twitchapi꞉> 
+a
+auth/access_token
+clj꞉twitchapi꞉> 
+a
+auth/access_token
+clj꞉twitchapi꞉> 
+#'twitchapi/a
+clj꞉twitchapi꞉> 
+a
+"6ppovbyukmd1m3ek4st9ufzfqas9m6"
+clj꞉twitchapi꞉> 
+; Execution error (FileNotFoundException) at twitchapi/eval4390$loading (form-init18411720395893995786.clj:1).
+; Could not locate auth/client_id__init.class, auth/client_id.clj or auth/client_id.cljc on classpath. Please check that namespaces with dashes use underscores in the Clojure file name.
+clj꞉twitchapi꞉> 
+nil
+clj꞉twitchapi꞉> 
+; Syntax error compiling at (d:\SiRN\Clojure\ISPIT\InfluencersTracker\influencerstracker\src\twitchapi.clj:7:3).
+; No such namespace: json
+clj꞉twitchapi꞉> 
+auth.cl
+; Syntax error (ClassNotFoundException) compiling at (d:\SiRN\Clojure\ISPIT\InfluencersTracker\influencerstracker\.calva\output-window\output.calva-repl:1:1475).
+; auth.cl
+clj꞉twitchapi꞉> 
+auth.client-id
+; Syntax error (ClassNotFoundException) compiling at (d:\SiRN\Clojure\ISPIT\InfluencersTracker\influencerstracker\.calva\output-window\output.calva-repl:1:1475).
+; auth.client-id
+clj꞉twitchapi꞉> 
+nil
+clj꞉auth꞉> 
+#'auth/access_token
+clj꞉auth꞉> 
+#'auth/content-type
+clj꞉auth꞉> 
+#'auth/get-token
+clj꞉auth꞉> 
+#'auth/client-secret
+clj꞉auth꞉> 
+#'auth/client-id
+clj꞉auth꞉> 
+#'auth/grant-type
+clj꞉auth꞉> 
+#'auth/oauth2
+clj꞉auth꞉> 
+nil
+clj꞉twitchapi꞉> 
+#'twitchapi/baseURL
+clj꞉twitchapi꞉> 
+auth.client-id
+; Syntax error (ClassNotFoundException) compiling at (d:\SiRN\Clojure\ISPIT\InfluencersTracker\influencerstracker\.calva\output-window\output.calva-repl:1:1475).
+; auth.client-id
+clj꞉twitchapi꞉> 
+nil
+clj꞉twitchapi꞉> 
+#'twitchapi/baseURL
+clj꞉twitchapi꞉> 
+; Syntax error compiling at (d:\SiRN\Clojure\ISPIT\InfluencersTracker\influencerstracker\src\twitchapi.clj:7:3).
+; No such namespace: json
+clj꞉twitchapi꞉> 
+; Syntax error compiling at (d:\SiRN\Clojure\ISPIT\InfluencersTracker\influencerstracker\src\twitchapi.clj:7:3).
+; No such namespace: json
+clj꞉twitchapi꞉> 
+; Syntax error compiling at (d:\SiRN\Clojure\ISPIT\InfluencersTracker\influencerstracker\src\twitchapi.clj:7:3).
+; No such namespace: json
+clj꞉twitchapi꞉> 
+(str baseURL "games/top")
+"https://api.twitch.tv/helix/games/top"
+clj꞉twitchapi꞉> auth/client-id
+"51fsw18ny5mvqfbc93tbmcpqdxx8w4"
+clj꞉twitchapi꞉> str "Bearer " auth/access_token
+"btgu9z7gfjafmxsh03yxxwku174smf"
+clj꞉twitchapi꞉> 
+(str "Bearer " auth/access_token)
+"Bearer btgu9z7gfjafmxsh03yxxwku174smf"
+clj꞉twitchapi꞉> 
+auth/content-type
+"application/json"
+clj꞉twitchapi꞉> 
+nil
+clj꞉twitchapi꞉> 
+#'twitchapi/baseURL
+clj꞉twitchapi꞉> 
+#'twitchapi/get-top-games
+clj꞉twitchapi꞉> (get-top-games)
+{"data" [{"id" "509658", "name" "Just Chatting", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Just%20Chatting-{width}x{height}.jpg"} {"id" "32399", "name" "Counter-Strike: Global Offensive", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/./Counter-Strike:%20Global%20Offensive-{width}x{height}.jpg"} {"id" "21779", "name" "League of Legends", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-{width}x{height}.jpg"} {"id" "512710", "name" "Call of Duty: Warzone", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/./Call%20of%20Duty:%20Warzone-{width}x{height}.jpg"} {"id" "33214", "name" "Fortnite", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Fortnite-{width}x{height}.jpg"} {"id" "32982", "name" "Grand Theft Auto V", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Grand%20Theft%20Auto%20V-{width}x{height}.jpg"} {"id" "491931", "name" "Escape From Tarkov", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Escape%20From%20Tarkov-{width}x{height}.jpg"} {"id" "518204", "name" "FIFA 21", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/FIFA%2021-{width}x{height}.jpg"} {"id" "29595", "name" "Dota 2", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Dota%202-{width}x{height}.jpg"} {"id" "516575", "name" "VALORANT", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/VALORANT-{width}x{height}.jpg"} {"id" "27471", "name" "Minecraft", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Minecraft-{width}x{height}.jpg"} {"id" "511224", "name" "Apex Legends", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Apex%20Legends-{width}x{height}.jpg"} {"id" "510218", "name" "Among Us", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Among%20Us-{width}x{height}.jpg"} {"id" "263490", "name" "Rust", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Rust-{width}x{height}.jpg"} {"id" "18122", "name" "World of Warcraft", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Warcraft-{width}x{height}.jpg"} {"id" "138585", "name" "Hearthstone", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone-{width}x{height}.jpg"} {"id" "498566", "name" "Slots", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Slots-{width}x{height}.jpg"} {"id" "29307", "name" "Path of Exile", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Path%20of%20Exile-{width}x{height}.jpg"} {"id" "743", "name" "Chess", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Chess-{width}x{height}.jpg"} {"id" "491487", "name" "Dead by Daylight", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Dead%20by%20Daylight-{width}x{height}.jpg"}], "pagination" {"cursor" "eyJzIjoyMCwiZCI6ZmFsc2UsInQiOnRydWV9"}}
+clj꞉twitchapi꞉> 
+#'twitchapi/get-top-game
+clj꞉twitchapi꞉> 
+(get-top-game)
+{"id" "509658", "name" "Just Chatting", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Just%20Chatting-{width}x{height}.jpg"}
+clj꞉twitchapi꞉> 
+#'twitchapi/get-game-by-id
+clj꞉twitchapi꞉> 
+(get-game-by-id 21779)
+{"data" [{"id" "21779", "name" "League of Legends", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-{width}x{height}.jpg"}]}
+clj꞉twitchapi꞉> 
+#'twitchapi/search-categories
+clj꞉twitchapi꞉> 
+(search-categories "warcraft 3")
+; Execution error (ExceptionInfo) at slingshot.support/stack-trace (support.clj:201).
+; clj-http: status 400
+clj꞉twitchapi꞉> 
+#'twitchapi/search-categories
+clj꞉twitchapi꞉> 
+(search-categories "warcraft")
+{"data" [{"box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Warcraft%20III-52x72.jpg", "id" "12924", "name" "Warcraft III"}], "pagination" {}}
+clj꞉twitchapi꞉> 
+{"data" [{"box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone-52x72.jpg", "id" "138585", "name" "Hearthstone"} {"box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Warcraft-52x72.jpg", "id" "18122", "name" "World of Warcraft"} {"box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/./Warcraft:%20Orcs%20&%20Humans-52x72.jpg", "id" "8915", "name" "Warcraft: Orcs & Humans"} {"box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/./Peggle:%20World%20of%20Warcraft%20Edition-52x72.jpg", "id" "24607", "name" "Peggle: World of Warcraft Edition"} {"box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/./Warcraft%20II:%20Tides%20of%20Darkness-52x72.jpg", "id" "18381", "name" "Warcraft II: Tides of Darkness"} {"box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Warcraft%20-%20Battle%20Chest-52x72.jpg", "id" "1247830981", "name" "World of Warcraft - Battle Chest"} {"box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Warcraft%20III-52x72.jpg", "id" "12924", "name" "Warcraft III"}], "pagination" {}}
+clj꞉twitchapi꞉> 
+#'twitchapi/search-channels
+clj꞉twitchapi꞉> 
+(search-channels gorgc true)
+; Syntax error compiling at (d:\SiRN\Clojure\ISPIT\InfluencersTracker\influencerstracker\.calva\output-window\output.calva-repl:198:1).
+; Unable to resolve symbol: gorgc in this context
+clj꞉twitchapi꞉> 
+(str baseURL "search/channels?query=" "gorc" "&live_only" "true")
+"https://api.twitch.tv/helix/search/channels?query=gorc&live_onlytrue"
+clj꞉twitchapi꞉> 
+#'twitchapi/search-channels
+clj꞉twitchapi꞉> 
+; Syntax error compiling at (d:\SiRN\Clojure\ISPIT\InfluencersTracker\influencerstracker\.calva\output-window\output.calva-repl:198:1).
+; Unable to resolve symbol: gorgc in this context
+clj꞉twitchapi꞉> 
+#'twitchapi/search-channels
+clj꞉twitchapi꞉> (search-channels "gorgc" true)
+{"data" [{"id" "176108753", "started_at" "2021-02-04T15:36:37Z", "tag_ids" ["fd76c790-0505-4c4c-865a-d6bd139c0901"], "display_name" "BigWolfShow", "title" "GORGE BOZORG [FA] +18 @sadramtv @welawd", "thumbnail_url" "https://static-cdn.jtvnw.net/jtv_user_pictures/b7ed6842-fac0-41da-933b-d4d984efc6f3-profile_image-300x300.png", "broadcaster_login" "bigwolfshow", "broadcaster_language" "other", "is_live" true, "game_id" "512710"} {"id" "155248061", "started_at" "2021-02-04T18:15:55Z", "tag_ids" [], "display_name" "raynproton5", "title" "[+18] LEAGUE OF LEGENDS - Personalizadas con amigos. // !Roblox  // #GoRaccoons", "thumbnail_url" "https://static-cdn.jtvnw.net/jtv_user_pictures/40a607d1-b5ca-4c5a-8f92-9858b5c1c5c7-profile_image-300x300.png", "broadcaster_login" "raynproton5", "broadcaster_language" "es", "is_live" true, "game_id" "21779"} {"id" "492045665", "started_at" "2021-02-04T18:00:18Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039"], "display_name" "gorgeousporgeous", "title" "New Emotes POG", "thumbnail_url" "https://static-cdn.jtvnw.net/jtv_user_pictures/8e06df1c-13ac-4b18-9b20-ea6ee4d4b49b-profile_image-300x300.png", "broadcaster_login" "gorgeousporgeous", "broadcaster_language" "en", "is_live" true, "game_id" "21779"} {"id" "145160238", "started_at" "2021-02-04T16:47:32Z", "tag_ids" ["f9d04efa-6e25-49bf-bf0a-da3e2addaf1b"], "display_name" "Gorgi91", "title" "strimek u nudziarza", "thumbnail_url" "https://static-cdn.jtvnw.net/jtv_user_pictures/01fb7718-806c-43aa-9630-b4bfa40ebf65-profile_image-300x300.png", "broadcaster_login" "gorgi91", "broadcaster_language" "pl", "is_live" true, "game_id" "515481"} {"id" "642486202", "started_at" "2021-02-04T18:16:40Z", "tag_ids" [], "display_name" "goracylentix", "title" "CELESTA TIBIJSKI PATROL 18+", "thumbnail_url" "https://static-cdn.jtvnw.net/user-default-pictures-uv/ce57700a-def9-11e9-842d-784f43822e80-profile_image-300x300.png", "broadcaster_login" "goracylentix", "broadcaster_language" "en", "is_live" true, "game_id" "19619"} {"id" "552837444", "started_at" "2021-02-04T17:50:17Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039"], "display_name" "Gorucaz", "title" "streampie", "thumbnail_url" "https://static-cdn.jtvnw.net/user-default-pictures-uv/998f01ae-def8-11e9-b95c-784f43822e80-profile_image-300x300.png", "broadcaster_login" "gorucaz", "broadcaster_language" "en", "is_live" true, "game_id" "32982"} {"id" "502892039", "started_at" "2021-02-04T18:00:45Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039" "ef4f33d5-a6cb-4935-bc1d-97c818a1e39e" "cb00cfe5-ae4e-4e4f-a8f1-8fa6ddec6361"], "display_name" "DenholmCD7", "title" "[SCO] GORGIE RULEZ | SEASON 3 | !charity !sunday !giveaway !save !euro !discord !tiktok !twitter !youtube", "thumbnail_url" "https://static-cdn.jtvnw.net/jtv_user_pictures/fe2d10a3-f21e-405d-a5d8-8a3c393a2904-profile_image-300x300.png", "broadcaster_login" "denholmcd7", "broadcaster_language" "en", "is_live" true, "game_id" "1271244884"} {"id" "62723862", "started_at" "2021-02-04T18:05:47Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039"], "display_name" "TheWildGorocco", "title" "Gorocco Plays: Star Citizen with Stormriders", "thumbnail_url" "https://static-cdn.jtvnw.net/jtv_user_pictures/1b4bf224-a23f-43ec-8f11-f3dd3b2e2ab4-profile_image-300x300.png", "broadcaster_login" "thewildgorocco", "broadcaster_language" "en", "is_live" true, "game_id" "71375"} {"id" "553231320", "started_at" "2021-02-04T17:42:08Z", "tag_ids" ["6f655045-9989-4ef7-8f85-1edcec42d648" "ad18ee82-c0b2-46d4-b4f9-d45994443bd7"], "display_name" "Sordique", "title" "Gorgô  (Empereur)", "thumbnail_url" "https://static-cdn.jtvnw.net/jtv_user_pictures/90c81964-12eb-491d-ab72-915317b70401-profile_image-300x300.png", "broadcaster_login" "sordique", "broadcaster_language" "fr", "is_live" true, "game_id" "492553"} {"id" "108268890", "started_at" "2021-02-04T16:37:45Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039"], "display_name" "Gorgc", "title" "roll", "thumbnail_url" "https://static-cdn.jtvnw.net/jtv_user_pictures/gorgc-profile_image-469e05d25a1e8594-300x300.jpeg", "broadcaster_login" "gorgc", "broadcaster_language" "en", "is_live" true, "game_id" "29595"} {"id" "585087877", "started_at" "2021-02-04T18:11:12Z", "tag_ids" ["d4bb9c58-2141-4881-bcdc-3fe0505457d1"], "display_name" "gorgonweiss_", "title" "( Id: Gorgon Weiss )\n", "thumbnail_url" "https://static-cdn.jtvnw.net/jtv_user_pictures/69c548b7-943e-4fe3-b852-c482cc1cbee7-profile_image-300x300.png", "broadcaster_login" "gorgonweiss_", "broadcaster_language" "es", "is_live" true, "game_id" "33214"} {"id" "272645196", "started_at" "2021-02-04T16:50:17Z", "tag_ids" ["ab2975e3-b9ca-4b1a-a93e-fb61a5d5c3a4"], "display_name" "naki_gorgo13", "title" "[KR / EN] Road to 490 [KMCH]nakiiinoobest", "thumbnail_url" "https://static-cdn.jtvnw.net/jtv_user_pictures/72dd9acf-fdf3-44ac-b68f-6a40d2c262c8-profile_image-300x300.png", "broadcaster_login" "naki_gorgo13", "broadcaster_language" "ko", "is_live" true, "game_id" "504199"} {"id" "631265842", "started_at" "2021-02-04T17:11:35Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039"], "display_name" "theolivestones", "title" "✨Outer Worlds Full Playthrough & Peril on Gorgon DLC✨", "thumbnail_url" "https://static-cdn.jtvnw.net/jtv_user_pictures/28aaf200-a060-4b72-94fe-f4030e8d5a35-profile_image-300x300.png", "broadcaster_login" "theolivestones", "broadcaster_language" "en", "is_live" true, "game_id" "510580"} {"id" "566831852", "started_at" "2021-02-04T15:03:29Z", "tag_ids" ["f9d04efa-6e25-49bf-bf0a-da3e2addaf1b"], "display_name" "RubZone", "title" "Goraczka Verdanska", "thumbnail_url" "https://static-cdn.jtvnw.net/jtv_user_pictures/e1ca4274-1c1f-4692-9226-472306bfd696-profile_image-300x300.png", "broadcaster_login" "rubzone", "broadcaster_language" "pl", "is_live" true, "game_id" "0"} {"id" "515166892", "started_at" "", "tag_ids" [], "display_name" "GorcanTV", "title" "Bientot 100 follow :) Apex puis Mario party", "thumbnail_url" "https://static-cdn.jtvnw.net/jtv_user_pictures/45244e6c-7fb7-4f29-ac53-758e8d21733f-profile_image-300x300.png", "broadcaster_login" "gorcantv", "broadcaster_language" "fr", "is_live" false, "game_id" "511224"} {"id" "99787107", "started_at" "2021-02-04T17:39:43Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039"], "display_name" "Gorgonocephalus", "title" "", "thumbnail_url" "https://static-cdn.jtvnw.net/user-default-pictures-uv/41780b5a-def8-11e9-94d9-784f43822e80-profile_image-300x300.png", "broadcaster_login" "gorgonocephalus", "broadcaster_language" "en", "is_live" true, "game_id" "0"} {"id" "594442384", "started_at" "2021-02-04T17:31:59Z", "tag_ids" ["d4bb9c58-2141-4881-bcdc-3fe0505457d1"], "display_name" "TeamR0deoCual", "title" "PROBANDO PLAYERS PAL TEAM🔥(ROTATIVAS) #GoRcTeam /Rc Team/ !comandos !redes !ds !donar !id\n", "thumbnail_url" "https://static-cdn.jtvnw.net/jtv_user_pictures/4347a03d-c0f7-40c4-a964-5b21cd1a94a9-profile_image-300x300.png", "broadcaster_login" "teamr0deocual", "broadcaster_language" "es", "is_live" true, "game_id" "33214"}], "pagination" {}}
+clj꞉twitchapi꞉> 
+#'twitchapi/get-streams
+clj꞉twitchapi꞉> 
+(get-streams 21779)
+{"data" [{"user_id" "622498423", "user_name" "otplol_", "id" "40987531724", "user_login" "otplol_", "started_at" "2021-02-04T17:00:11Z", "tag_ids" ["6f655045-9989-4ef7-8f85-1edcec42d648"], "game_name" "League of Legends", "title" "LFL 2021 - GW vs GO - Semaine 3 Jour 2 - BO1", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_otplol_-{width}x{height}.jpg", "viewer_count" 26513, "language" "fr", "game_id" "21779"} {"user_id" "22346597", "user_name" "LVPes", "id" "40987051548", "user_login" "lvpes", "started_at" "2021-02-04T16:21:58Z", "tag_ids" ["d4bb9c58-2141-4881-bcdc-3fe0505457d1" "36a89a80-4fcd-4b74-b3d2-2c6fd9b30c95"], "game_name" "League of Legends", "title" "¡Disfruta la séptima jornada de SuperLiga de LoL en LVP! #SuperLigaLoL7", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_lvpes-{width}x{height}.jpg", "viewer_count" 23282, "language" "es", "game_id" "21779"} {"user_id" "47071880", "user_name" "YoDa", "id" "40447623949", "user_login" "yoda", "started_at" "2021-02-04T16:58:21Z", "tag_ids" ["39ee8140-901a-4762-bfca-8260dea1310f"], "game_name" "League of Legends", "title" "SEM NEGATIVIDADE - SEM TOXIDADE - LIVE ATE 400PDL SEM KAPPA", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_yoda-{width}x{height}.jpg", "viewer_count" 20351, "language" "pt", "game_id" "21779"} {"user_id" "29654002", "user_name" "랄로", "id" "40445440013", "user_login" "aba4647", "started_at" "2021-02-04T12:53:37Z", "tag_ids" ["ab2975e3-b9ca-4b1a-a93e-fb61a5d5c3a4"], "game_name" "League of Legends", "title" "바텀 , 사랑을 배우다", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_aba4647-{width}x{height}.jpg", "viewer_count" 12091, "language" "ko", "game_id" "21779"} {"user_id" "85397463", "user_name" "NoWay4u_Sir", "id" "40986118348", "user_login" "noway4u_sir", "started_at" "2021-02-04T15:02:11Z", "tag_ids" ["9166ad14-41f1-4b04-a3b8-c8eb838c6be6"], "game_name" "League of Legends", "title" "Der lange steinige Weg nach Challenger", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_noway4u_sir-{width}x{height}.jpg", "viewer_count" 12006, "language" "de", "game_id" "21779"} {"user_id" "59308271", "user_name" "TFBlade", "id" "40446586989", "user_login" "tfblade", "started_at" "2021-02-04T15:12:58Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039"], "game_name" "League of Legends", "title" "WE FALL WE RISE WE DONT STOP", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_tfblade-{width}x{height}.jpg", "viewer_count" 11753, "language" "en", "game_id" "21779"} {"user_id" "30357893", "user_name" "Werlyb", "id" "40986158668", "user_login" "werlyb", "started_at" "2021-02-04T15:05:38Z", "tag_ids" ["d4bb9c58-2141-4881-bcdc-3fe0505457d1"], "game_name" "League of Legends", "title" "VAMOS A POR EL CHALLENGER. !sorteo", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_werlyb-{width}x{height}.jpg", "viewer_count" 8767, "language" "es", "game_id" "21779"} {"user_id" "463176517", "user_name" "primeleague", "id" "40447013517", "user_login" "primeleague", "started_at" "2021-02-04T15:59:45Z", "tag_ids" ["9166ad14-41f1-4b04-a3b8-c8eb838c6be6" "36a89a80-4fcd-4b74-b3d2-2c6fd9b30c95"], "game_name" "League of Legends", "title" "Prime League 2021 - Pro Div - Spring Split - Spieltag 7\n\n", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_primeleague-{width}x{height}.jpg", "viewer_count" 6849, "language" "de", "game_id" "21779"} {"user_id" "44880944", "user_name" "ElmiilloR", "id" "40986226700", "user_login" "elmiillor", "started_at" "2021-02-04T15:11:44Z", "tag_ids" ["d4bb9c58-2141-4881-bcdc-3fe0505457d1"], "game_name" "League of Legends", "title" "ELMILOVE DOMINGO A LAS 22:00  | BOXEADOR PROFESIONAL |  !newYT | @elmiillor", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_elmiillor-{width}x{height}.jpg", "viewer_count" 5644, "language" "es", "game_id" "21779"} {"user_id" "152714599", "user_name" "테디이", "id" "40446332205", "user_login" "t1_teddy", "started_at" "2021-02-04T14:44:18Z", "tag_ids" ["ab2975e3-b9ca-4b1a-a93e-fb61a5d5c3a4"], "game_name" "League of Legends", "title" "T1 Teddy", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_t1_teddy-{width}x{height}.jpg", "viewer_count" 5141, "language" "ko", "game_id" "21779"} {"user_id" "93869876", "user_name" "Thebausffs", "id" "40447882669", "user_login" "thebausffs", "started_at" "2021-02-04T17:20:26Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039"], "game_name" "League of Legends", "title" "fire thursday", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_thebausffs-{width}x{height}.jpg", "viewer_count" 4053, "language" "en", "game_id" "21779"} {"user_id" "101234264", "user_name" "Crocodyle_lol", "id" "40987754268", "user_login" "crocodyle_lol", "started_at" "2021-02-04T17:15:50Z", "tag_ids" ["6f655045-9989-4ef7-8f85-1edcec42d648"], "game_name" "League of Legends", "title" "CROCO - SUR LE DANCE FLOOR AVEC L'APPROBATION DE MR.LAFAILLE", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_crocodyle_lol-{width}x{height}.jpg", "viewer_count" 3621, "language" "fr", "game_id" "21779"} {"user_id" "86131599", "user_name" "lol_nemesis", "id" "40985463932", "user_login" "lol_nemesis", "started_at" "2021-02-04T13:54:22Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039"], "game_name" "League of Legends", "title" "Gen.G Nemesis | Soloq, Unban requests and Clash | !blitz !nord\n", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_lol_nemesis-{width}x{height}.jpg", "viewer_count" 3563, "language" "en", "game_id" "21779"} {"user_id" "44099416", "user_name" "Rakin", "id" "40445969933", "user_login" "rakin", "started_at" "2021-02-04T14:00:16Z", "tag_ids" ["39ee8140-901a-4762-bfca-8260dea1310f"], "game_name" "League of Legends", "title" "MONO VIEGO HIGH ELO YES I AM - POE NA FILA", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_rakin-{width}x{height}.jpg", "viewer_count" 3437, "language" "pt", "game_id" "21779"} {"user_id" "541028234", "user_name" "표식표이루", "id" "40446474605", "user_login" "pyosixs", "started_at" "2021-02-04T15:00:42Z", "tag_ids" ["ab2975e3-b9ca-4b1a-a93e-fb61a5d5c3a4"], "game_name" "League of Legends", "title" "막판", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_pyosixs-{width}x{height}.jpg", "viewer_count" 3368, "language" "ko", "game_id" "21779"} {"user_id" "26560695", "user_name" "Shiphtur", "id" "41579244878", "user_login" "shiphtur", "started_at" "2021-02-04T16:11:15Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039"], "game_name" "League of Legends", "title" "league then 100K APEX TOURNAMENT w/ TIMMY AND LOU", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_shiphtur-{width}x{height}.jpg", "viewer_count" 3006, "language" "en", "game_id" "21779"} {"user_id" "91137296", "user_name" "TobiasFate", "id" "41578542078", "user_login" "tobiasfate", "started_at" "2021-02-04T13:42:49Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039"], "game_name" "League of Legends", "title" "Tobias Fate - INDIRECT GP BUFFS AND NEW BUILD? no complain just game", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_tobiasfate-{width}x{height}.jpg", "viewer_count" 2998, "language" "en", "game_id" "21779"} {"user_id" "63162874", "user_name" "esAcarry", "id" "40446356045", "user_login" "esacarry", "started_at" "2021-02-04T14:47:07Z", "tag_ids" ["39ee8140-901a-4762-bfca-8260dea1310f"], "game_name" "League of Legends", "title" "TRYHARD 1K PDL RUMO TOP5  // LOJA NOVA SUBS 2X !LOJA", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_esacarry-{width}x{height}.jpg", "viewer_count" 2582, "language" "pt", "game_id" "21779"} {"user_id" "53256534", "user_name" "jovirone", "id" "40445649021", "user_login" "jovirone", "started_at" "2021-02-04T13:19:30Z", "tag_ids" ["39ee8140-901a-4762-bfca-8260dea1310f"], "game_name" "League of Legends", "title" "FNC JOVIRONE - CHALLENGER JUNGLER RUMO AO TOP 1.", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_jovirone-{width}x{height}.jpg", "viewer_count" 2243, "language" "pt", "game_id" "21779"} {"user_id" "52650914", "user_name" "PG_Esports", "id" "40447831149", "user_login" "pg_esports", "started_at" "2021-02-04T17:15:43Z", "tag_ids" ["36a89a80-4fcd-4b74-b3d2-2c6fd9b30c95" "5b9935eb-1e9a-4217-98ad-62bda5cff0d1"], "game_name" "League of Legends", "title" "SMS vs GGE - PG Nats Day 8", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_pg_esports-{width}x{height}.jpg", "viewer_count" 1984, "language" "it", "game_id" "21779"}], "pagination" {"cursor" "eyJiIjp7IkN1cnNvciI6ImV5SnpJam95TmpVeE15NDBNRFUyTWprMU5EZzFOeXdpWkNJNlptRnNjMlVzSW5RaU9uUnlkV1Y5In0sImEiOnsiQ3Vyc29yIjoiZXlKeklqb3hPVGcwTGpVMU1EUXhNVE0wTURBME1EVXNJbVFpT21aaGJITmxMQ0owSWpwMGNuVmxmUT09In19"}}
+clj꞉twitchapi꞉> 
+#'twitchapi/get-user
+clj꞉twitchapi꞉> 
+(get-user 50160915)
+{"data" [{"offline_image_url" "https://static-cdn.jtvnw.net/jtv_user_pictures/a80c9d38-20a1-43c7-88f1-06637df11c2b-channel_offline_image-1920x1080.png", "view_count" 104692253, "id" "50160915", "profile_image_url" "https://static-cdn.jtvnw.net/jtv_user_pictures/521d85de-7f26-4bad-8dbe-5800820423a7-profile_image-300x300.png", "display_name" "DreamLeague", "type" "", "broadcaster_type" "partner", "created_at" "2013-10-14T10:37:26.859966Z", "login" "dreamleague", "description" "Founded in the fall of 2013 DreamLeague is one of the longest running Dota 2 leagues in the world and only the very best teams have been able to call themselves DreamLeague champions."}]}
+clj꞉twitchapi꞉> 
