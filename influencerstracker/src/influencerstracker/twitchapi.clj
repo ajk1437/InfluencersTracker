@@ -6,7 +6,11 @@
 
 (def baseURL "https://api.twitch.tv/helix/")
 
+(defn timestamp [] 
+  (new java.util.Date))
+
 (defn get-top-games []
+  "Return top 10 games with most viewers"
   (json/read-str
    (:body
     (http/get (str baseURL "games/top")
@@ -54,6 +58,33 @@
                 :Authorization (str "Bearer " auth/access_token)
                 :content-type auth/content-type}}))))
 
+(defn get-streams-user [name]
+  (json/read-str
+   (:body
+    (http/get (str baseURL "streams?user_login=" name)
+              {:headers
+               {:client-id auth/client-id
+                :Authorization (str "Bearer " auth/access_token)
+                :content-type auth/content-type}}))))
+
+(defn get-streams-top []
+  (json/read-str
+   (:body
+    (http/get (str baseURL "streams")
+              {:headers
+               {:client-id auth/client-id
+                :Authorization (str "Bearer " auth/access_token)
+                :content-type auth/content-type}}))))
+
+(defn get-channel-info [id]
+  (json/read-str
+   (:body
+    (http/get (str baseURL "channels?broadcaster_id=" id)
+              {:headers
+               {:client-id auth/client-id
+                :Authorization (str "Bearer " auth/access_token)
+                :content-type auth/content-type}}))))
+
 (defn get-user [user_id]
   (json/read-str
    (:body
@@ -62,3 +93,38 @@
                {:client-id auth/client-id
                 :Authorization (str "Bearer " auth/access_token)
                 :content-type auth/content-type}}))))
+
+(get-in (get-top-games) ["data" 4 "id" "name"])
+
+(for [x (range 0 9)] (get-in (get-top-games) ["data" x "name" ""]))
+
+(def game-names (for [x (range 0 9)] (get-in (get-top-games) ["data" x "name"])))
+(def game-ids (for [x (range 0 9)] (get-in (get-top-games) ["data" x "id"])))
+
+(defn unify
+  [id name]
+  {:id id
+   :name name})
+
+(map unify game-ids game-names)
+
+(get-game-by-id (get-in (get-top-game) ["data" 0 "id"]))
+
+;; get viewer for top game 
+(get-in 
+ (get-user 
+  (get-in 
+   (get-streams 
+    (get (get-top-game) "id")) ["data" 0 "user_id"])) ["data" 0 "view_count"])
+
+(def arr 
+  (loop [x 0]
+    (when (< x 10)
+    (get-in
+     (get-user
+      (get-in
+       (get-streams
+        (get (get-top-game) "id")) ["data" x "user_id"])) ["data" 0 "display_name"]))
+    (recur (+ x 1))))
+
+(def arr1 ["asd" "asdad"])

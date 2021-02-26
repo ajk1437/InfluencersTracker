@@ -11,7 +11,6 @@
 (def get-token (str oauth2 "client_id=" client-id "&client_secret=" client-secret grant-type))
 (def content-type "application/json")
 
-
 (def access_token
   "Get access_token"
   (get (json/read-str (:body (http/post get-token))) "access_token"))
