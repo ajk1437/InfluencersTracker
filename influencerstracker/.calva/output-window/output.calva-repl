@@ -14,43 +14,301 @@
 ;   - `alt+up` and `alt+down` traverse up and down the REPL command history
 ;      when the cursor is after the last contents at the prompt
 ;   - Clojure lines in stack traces are peekable and clickable.
-clj꞉user꞉> 
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+nil
+clj꞉auth꞉> 
+#'auth/oauth2
+clj꞉auth꞉> 
+#'auth/grant-type
+clj꞉auth꞉> 
+#'auth/client-id
+clj꞉auth꞉> 
+#'auth/client-secret
+clj꞉auth꞉> 
+#'auth/get-token
+clj꞉auth꞉> 
+#'auth/content-type
+clj꞉auth꞉> 
+#'auth/access_token
+clj꞉auth꞉> 
+access_token
+"pqm5ay4qs1u93x3rzf8mtsdlcqposc"
+clj꞉auth꞉> 
+nil
+clj꞉twitchapi꞉> 
+#'twitchapi/baseURL
+clj꞉twitchapi꞉> 
+#'twitchapi/timestamp
+clj꞉twitchapi꞉> 
+#'twitchapi/get-top-games
+clj꞉twitchapi꞉> 
+#'twitchapi/get-top-game
+clj꞉twitchapi꞉> 
+#'twitchapi/get-game-by-id
+clj꞉twitchapi꞉> 
+#'twitchapi/get-top-game-name
+clj꞉twitchapi꞉> 
+#'twitchapi/get-game-by-id
+clj꞉twitchapi꞉> 
+#'twitchapi/search-categories
+clj꞉twitchapi꞉> 
+#'twitchapi/search-channels
+clj꞉twitchapi꞉> 
+#'twitchapi/get-streams
+clj꞉twitchapi꞉> 
+#'twitchapi/get-streams-user
+clj꞉twitchapi꞉> 
+; Syntax error compiling at (d:\SiRN\Clojure\ISPIT\InfluencersTracker\influencerstracker\src\influencerstracker\twitchapi.clj:83:29).
+; Unable to resolve symbol: get-streams-top-id in this context
+clj꞉twitchapi꞉> 
+#'twitchapi/get-streams-top
+clj꞉twitchapi꞉> 
+#'twitchapi/get-streams-top-id
+clj꞉twitchapi꞉> 
+#'twitchapi/get-streams-top-name
+clj꞉twitchapi꞉> 
+#'twitchapi/get-streams-top-gamename
+clj꞉twitchapi꞉> 
+#'twitchapi/get-streams-top-view
+clj꞉twitchapi꞉> 
+#'twitchapi/get-channel-info
+clj꞉twitchapi꞉> 
+#'twitchapi/get-user
+clj꞉twitchapi꞉> 
+#'twitchapi/get-stream-language
+clj꞉twitchapi꞉> 
+#'twitchapi/get-stream-viewcount
+clj꞉twitchapi꞉> 
 nil
 clj꞉influencerstracker.core꞉> 
-#'influencerstracker.core/db
+#'influencerstracker.core/database
 clj꞉influencerstracker.core꞉> 
 #'influencerstracker.core/create-influencers-table!
 clj꞉influencerstracker.core꞉> 
-(#'influencerstracker.core/create-influencer #'influencerstracker.core/find-influencers #'influencerstracker.core/user-count)
+(#'influencerstracker.core/create-influencer #'influencerstracker.core/find-influencers #'influencerstracker.core/influencers-count #'influencerstracker.core/influencer-by-id)
 clj꞉influencerstracker.core꞉> 
-({:id 1, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 20:04:22 CET 2021"} {:id 2, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 20:04:25 CET 2021"} {:id 3, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 20:04:26 CET 2021"} {:id 4, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:00:52 CET 2021"} {:id 5, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:02:26 CET 2021"} {:id 6, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:16:44 CET 2021"})
+({:id 1, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 20:04:22 CET 2021"} {:id 2, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 20:04:25 CET 2021"} {:id 3, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 20:04:26 CET 2021"} {:id 4, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:00:52 CET 2021"} {:id 5, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:02:26 CET 2021"} {:id 6, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:16:44 CET 2021"} {:id 7, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:19:15 CET 2021"} {:id 8, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:19:24 CET 2021"} {:id 9, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:20:27 CET 2021"} {:id 10, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:28:40 CET 2021"} {:id 11, :name "Minecraft", :game "Minecraft", :views "150925", :language "en", :timestamp "Fri Feb 26 21:58:42 CET 2021"})
 clj꞉influencerstracker.core꞉> 
-; Execution error (PSQLException) at org.postgresql.jdbc.PgPreparedStatement/executeQuery (PgPreparedStatement.java:109).
-; No results were returned by the query.
+({:count 11})
 clj꞉influencerstracker.core꞉> 
-({:count 7})
-clj꞉influencerstracker.core꞉> 
-; Execution error (PSQLException) at org.postgresql.jdbc.PgPreparedStatement/executeQuery (PgPreparedStatement.java:109).
-; No results were returned by the query.
-clj꞉influencerstracker.core꞉> 
-({:count 8})
-clj꞉influencerstracker.core꞉> 
-(#'influencerstracker.core/create-influencer #'influencerstracker.core/find-influencers #'influencerstracker.core/influencers-count)
-clj꞉influencerstracker.core꞉> 
-({:count 8})
+({:id 11, :name "Minecraft", :game "Minecraft", :views "150925", :language "en", :timestamp "Fri Feb 26 21:58:42 CET 2021"})
 clj꞉influencerstracker.core꞉> 
 ; Execution error (PSQLException) at org.postgresql.jdbc.PgPreparedStatement/executeQuery (PgPreparedStatement.java:109).
 ; No results were returned by the query.
 clj꞉influencerstracker.core꞉> 
-({:id 1, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 20:04:22 CET 2021"} {:id 2, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 20:04:25 CET 2021"} {:id 3, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 20:04:26 CET 2021"} {:id 4, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:00:52 CET 2021"} {:id 5, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:02:26 CET 2021"} {:id 6, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:16:44 CET 2021"} {:id 7, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:19:15 CET 2021"} {:id 8, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:19:24 CET 2021"} {:id 9, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:20:27 CET 2021"})
+(twitchapi/get-streams-top-name)
+"summit1g"
 clj꞉influencerstracker.core꞉> 
-({:count 9})
+(twitchapi/get-streams-top-gamename)
+"Grand Theft Auto V"
 clj꞉influencerstracker.core꞉> 
-({:count 9})
+(twitchapi/get-stream-viewcount)
+34056
 clj꞉influencerstracker.core꞉> 
-({:count 9})
+(twitchapi/get-stream-language)
+"en"
 clj꞉influencerstracker.core꞉> 
-({:count 9})
+(str (new java.util.Date))
+"Mon Mar 01 11:49:39 CET 2021"
 clj꞉influencerstracker.core꞉> 
-({:count 9})
+; Execution error (PSQLException) at org.postgresql.jdbc.PgPreparedStatement/executeQuery (PgPreparedStatement.java:109).
+; No results were returned by the query.
+clj꞉influencerstracker.core꞉> 
+({:id 13, :name "summit1g", :game "Grand Theft Auto V", :views "34056", :language "en", :timestamp "Mon Mar 01 11:49:44 CET 2021"})
+clj꞉influencerstracker.core꞉> 
+#'influencerstracker.core/database
+clj꞉influencerstracker.core꞉> 
+(#'influencerstracker.core/create-influencer #'influencerstracker.core/find-influencers #'influencerstracker.core/influencers-count #'influencerstracker.core/influencer-by-id #'influencerstracker.core/influencer-order-by-timestamp)
+clj꞉influencerstracker.core꞉> 
+({:id 1, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 20:04:22 CET 2021"} {:id 2, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 20:04:25 CET 2021"} {:id 3, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 20:04:26 CET 2021"} {:id 4, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:00:52 CET 2021"} {:id 5, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:02:26 CET 2021"} {:id 6, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:16:44 CET 2021"} {:id 7, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:19:15 CET 2021"} {:id 8, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:19:24 CET 2021"} {:id 9, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:20:27 CET 2021"} {:id 10, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:28:40 CET 2021"} {:id 11, :name "Minecraft", :game "Minecraft", :views "150925", :language "en", :timestamp "Fri Feb 26 21:58:42 CET 2021"} {:id 12, :name "summit1g", :game "Grand Theft Auto V", :views "34056", :language "en", :timestamp "Mon Mar 01 11:48:51 CET 2021"} {:id 13, :name "summit1g", :game "Grand Theft Auto V", :views "34056", :language "en", :timestamp "Mon Mar 01 11:49:44 CET 2021"})
+clj꞉influencerstracker.core꞉> 
+(#'influencerstracker.core/create-influencer #'influencerstracker.core/find-influencers #'influencerstracker.core/influencers-count #'influencerstracker.core/influencer-by-id #'influencerstracker.core/influencer-order-by-timestamp)
+clj꞉influencerstracker.core꞉> 
+({:id 13, :name "summit1g", :game "Grand Theft Auto V", :views "34056", :language "en", :timestamp "Mon Mar 01 11:49:44 CET 2021"} {:id 12, :name "summit1g", :game "Grand Theft Auto V", :views "34056", :language "en", :timestamp "Mon Mar 01 11:48:51 CET 2021"} {:id 11, :name "Minecraft", :game "Minecraft", :views "150925", :language "en", :timestamp "Fri Feb 26 21:58:42 CET 2021"} {:id 10, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:28:40 CET 2021"} {:id 9, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:20:27 CET 2021"} {:id 8, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:19:24 CET 2021"} {:id 7, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:19:15 CET 2021"} {:id 6, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:16:44 CET 2021"} {:id 5, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:02:26 CET 2021"} {:id 4, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 21:00:52 CET 2021"} {:id 3, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 20:04:26 CET 2021"} {:id 2, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 20:04:25 CET 2021"} {:id 1, :name "bar", :game "wow", :views "1000", :language "en", :timestamp "Fri Feb 26 20:04:22 CET 2021"})
+clj꞉influencerstracker.core꞉> 
+(#'influencerstracker.core/create-influencer #'influencerstracker.core/find-influencers #'influencerstracker.core/influencers-count #'influencerstracker.core/influencer-by-id #'influencerstracker.core/influencer-order-by-timestamp #'influencerstracker.core/influencer-last-7-days)
+clj꞉influencerstracker.core꞉> 
+; Execution error (PSQLException) at org.postgresql.core.v3.QueryExecutorImpl/receiveErrorResponse (QueryExecutorImpl.java:2468).
+; ERROR: column "day" does not exist
+  Position: 56
+clj꞉influencerstracker.core꞉> 
+(#'influencerstracker.core/create-influencer #'influencerstracker.core/find-influencers #'influencerstracker.core/influencers-count #'influencerstracker.core/influencer-by-id #'influencerstracker.core/influencer-order-by-timestamp #'influencerstracker.core/influencer-last-7-days)
+clj꞉influencerstracker.core꞉> 
+; Execution error (PSQLException) at org.postgresql.core.v3.QueryExecutorImpl/receiveErrorResponse (QueryExecutorImpl.java:2468).
+; ERROR: column "day" does not exist
+  Position: 56
+clj꞉influencerstracker.core꞉> 
+(#'influencerstracker.core/create-influencer #'influencerstracker.core/find-influencers #'influencerstracker.core/influencers-count #'influencerstracker.core/influencer-by-id #'influencerstracker.core/influencer-order-by-timestamp #'influencerstracker.core/influencer-last-7-days)
+clj꞉influencerstracker.core꞉> 
+; Execution error (PSQLException) at org.postgresql.core.v3.QueryExecutorImpl/receiveErrorResponse (QueryExecutorImpl.java:2468).
+; ERROR: column "month" does not exist
+  Position: 56
+clj꞉influencerstracker.core꞉> 
+(#'influencerstracker.core/create-influencer #'influencerstracker.core/find-influencers #'influencerstracker.core/influencers-count #'influencerstracker.core/influencer-by-id #'influencerstracker.core/influencer-order-by-timestamp #'influencerstracker.core/influencer-last-7-days)
+clj꞉influencerstracker.core꞉> 
+; Execution error (PSQLException) at org.postgresql.core.v3.QueryExecutorImpl/receiveErrorResponse (QueryExecutorImpl.java:2468).
+; ERROR: operator does not exist: character varying >= timestamp without time zone
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 45
+clj꞉influencerstracker.core꞉> 
+(#'influencerstracker.core/create-influencer #'influencerstracker.core/find-influencers #'influencerstracker.core/influencers-count #'influencerstracker.core/influencer-by-id #'influencerstracker.core/influencer-order-by-timestamp #'influencerstracker.core/influencer-last-7-days)
+clj꞉influencerstracker.core꞉> 
+; Execution error (PSQLException) at org.postgresql.core.v3.QueryExecutorImpl/receiveErrorResponse (QueryExecutorImpl.java:2468).
+; ERROR: invalid value "Fri " for "YYYY"
+  Detail: Value must be an integer.
+clj꞉influencerstracker.core꞉> 
+(#'influencerstracker.core/create-influencer #'influencerstracker.core/find-influencers #'influencerstracker.core/influencers-count #'influencerstracker.core/influencer-by-id #'influencerstracker.core/influencer-order-by-timestamp #'influencerstracker.core/influencer-last-7-days)
+clj꞉influencerstracker.core꞉> 
+; Execution error (PSQLException) at org.postgresql.core.v3.QueryExecutorImpl/receiveErrorResponse (QueryExecutorImpl.java:2468).
+; ERROR: invalid value "Fr" for "DD"
+  Detail: Value must be an integer.
+clj꞉influencerstracker.core꞉> 
+(new java.util.Date)
+#inst "2021-03-01T11:05:20.957-00:00"
+clj꞉influencerstracker.core꞉> 
+(str (new java.util.Date))
+"Mon Mar 01 12:05:28 CET 2021"
+clj꞉influencerstracker.core꞉> 
+(clojure.instant/read-instant-date (new java.util.Date))
+; Execution error (ClassCastException) at influencerstracker.core/eval7582 (form-init18309540079687867891.clj:172).
+; class java.util.Date cannot be cast to class java.lang.CharSequence (java.util.Date and java.lang.CharSequence are in module java.base of loader 'bootstrap')
+clj꞉influencerstracker.core꞉> 
+(clojure.instant/read-instant-date "Mon Mar 01 12:05:28 CET 2021")
+; Execution error at influencerstracker.core/eval7584 (form-init18309540079687867891.clj:176).
+; Unrecognized date/time syntax: Mon Mar 01 12:05:28 CET 2021
+clj꞉influencerstracker.core꞉> 
+#'influencerstracker.core/create-influencers-table!
+clj꞉influencerstracker.core꞉> 
+(create-influencers-table!)
+(0)
+clj꞉influencerstracker.core꞉> 
+; Execution error (PSQLException) at org.postgresql.jdbc.PgPreparedStatement/setObject (PgPreparedStatement.java:955).
+; Can't infer the SQL type to use for an instance of java.util.Date. Use setObject() with an explicit Types value to specify the type to use.
+clj꞉influencerstracker.core꞉> 
+#'influencerstracker.core/database
+clj꞉influencerstracker.core꞉> 
+(#'influencerstracker.core/create-influencer #'influencerstracker.core/find-influencers #'influencerstracker.core/influencers-count #'influencerstracker.core/influencer-by-id #'influencerstracker.core/influencer-order-by-timestamp #'influencerstracker.core/influencer-last-7-days)
+clj꞉influencerstracker.core꞉> 
+; Execution error (PSQLException) at org.postgresql.jdbc.PgPreparedStatement/executeQuery (PgPreparedStatement.java:109).
+; No results were returned by the query.
+clj꞉influencerstracker.core꞉> 
+({:count 1})
+clj꞉influencerstracker.core꞉> 
+({:id 1, :name "summit1g", :game "Grand Theft Auto V", :views "33230", :language "en", :timestamp #inst "2021-03-01T11:10:45.923218000-00:00"})
+clj꞉influencerstracker.core꞉> 
+; Execution error (PSQLException) at org.postgresql.jdbc.PgPreparedStatement/executeQuery (PgPreparedStatement.java:109).
+; No results were returned by the query.
+clj꞉influencerstracker.core꞉> 
+({:count 2})
+clj꞉influencerstracker.core꞉> 
+({:id 1, :name "summit1g", :game "Grand Theft Auto V", :views "33230", :language "en", :timestamp #inst "2021-03-01T11:10:45.923218000-00:00"} {:id 2, :name "summit1g", :game "Grand Theft Auto V", :views "33230", :language "en", :timestamp #inst "2021-03-01T11:11:10.066023000-00:00"})
+clj꞉influencerstracker.core꞉> 
+({:id 2, :name "summit1g", :game "Grand Theft Auto V", :views "33230", :language "en", :timestamp #inst "2021-03-01T11:11:10.066023000-00:00"} {:id 1, :name "summit1g", :game "Grand Theft Auto V", :views "33230", :language "en", :timestamp #inst "2021-03-01T11:10:45.923218000-00:00"})
+clj꞉influencerstracker.core꞉> 
+; Execution error (PSQLException) at org.postgresql.core.v3.QueryExecutorImpl/receiveErrorResponse (QueryExecutorImpl.java:2468).
+; ERROR: function to_timestamp(timestamp without time zone, unknown) does not exist
+  Hint: No function matches the given name and argument types. You might need to add explicit type casts.
+  Position: 35
+clj꞉influencerstracker.core꞉> 
+(#'influencerstracker.core/create-influencer #'influencerstracker.core/find-influencers #'influencerstracker.core/influencers-count #'influencerstracker.core/influencer-by-id #'influencerstracker.core/influencer-order-by-timestamp #'influencerstracker.core/influencer-last-7-days)
+clj꞉influencerstracker.core꞉> 
+({:id 1, :name "summit1g", :game "Grand Theft Auto V", :views "33230", :language "en", :timestamp #inst "2021-03-01T11:10:45.923218000-00:00"} {:id 2, :name "summit1g", :game "Grand Theft Auto V", :views "33230", :language "en", :timestamp #inst "2021-03-01T11:11:10.066023000-00:00"})
+clj꞉influencerstracker.core꞉> 
+(#'influencerstracker.core/create-influencer #'influencerstracker.core/find-influencers #'influencerstracker.core/influencers-count #'influencerstracker.core/influencer-by-id #'influencerstracker.core/influencer-order-by-timestamp #'influencerstracker.core/influencer-last-7-days #'influencerstracker.core/change-timestamp)
+clj꞉influencerstracker.core꞉> 
+; Execution error (ClassCastException) at yesql.generate/rewrite-query-for-jdbc (generate.clj:38).
+; class java.lang.Long cannot be cast to class clojure.lang.IPersistentMap (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IPersistentMap is in unnamed module of loader 'app')
+clj꞉influencerstracker.core꞉> 
+(#'influencerstracker.core/create-influencer #'influencerstracker.core/find-influencers #'influencerstracker.core/influencers-count #'influencerstracker.core/influencer-by-id #'influencerstracker.core/influencer-order-by-timestamp #'influencerstracker.core/influencer-last-7-days #'influencerstracker.core/change-timestamp)
+clj꞉influencerstracker.core꞉> 
+; Execution error (ClassCastException) at yesql.generate/rewrite-query-for-jdbc (generate.clj:38).
+; class java.lang.Long cannot be cast to class clojure.lang.IPersistentMap (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IPersistentMap is in unnamed module of loader 'app')
+clj꞉influencerstracker.core꞉> 
+; Execution error (PSQLException) at org.postgresql.jdbc.PgPreparedStatement/executeQuery (PgPreparedStatement.java:109).
+; No results were returned by the query.
+clj꞉influencerstracker.core꞉> 
+({:id 1, :name "summit1g", :game "Grand Theft Auto V", :views "33230", :language "en", :timestamp #inst "2021-03-01T11:10:45.923218000-00:00"} {:id 2, :name "summit1g", :game "Grand Theft Auto V", :views "33230", :language "en", :timestamp #inst "2021-01-30T11:11:10.066023000-00:00"})
+clj꞉influencerstracker.core꞉> 
+; Execution error (PSQLException) at org.postgresql.jdbc.PgPreparedStatement/executeQuery (PgPreparedStatement.java:109).
+; No results were returned by the query.
+clj꞉influencerstracker.core꞉> 
+({:id 2, :name "summit1g", :game "Grand Theft Auto V", :views "33230", :language "en", :timestamp #inst "2020-12-31T11:11:10.066023000-00:00"})
+clj꞉influencerstracker.core꞉> 
+({:id 1, :name "summit1g", :game "Grand Theft Auto V", :views "33230", :language "en", :timestamp #inst "2021-03-01T11:10:45.923218000-00:00"})
+clj꞉influencerstracker.core꞉> 
+#'twitchapi/get-top-game
+clj꞉twitchapi꞉> 
+(get-top-game)
+{"id" "509658", "name" "Just Chatting", "box_art_url" "https://static-cdn.jtvnw.net/ttv-boxart/Just%20Chatting-{width}x{height}.jpg"}
+clj꞉twitchapi꞉> 
+(get-streams)
+; Execution error (ArityException) at twitchapi/eval7998 (form-init18309540079687867891.clj:244).
+; Wrong number of args (0) passed to: twitchapi/get-streams
+clj꞉twitchapi꞉> 
+(get-streams-top)
+{"data" [{"user_id" "26490481", "user_name" "summit1g", "id" "41875779838", "user_login" "summit1g", "started_at" "2021-02-28T22:36:44Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039"], "game_name" "Grand Theft Auto V", "title" "charles. NoPixel 3.0. NEW STUFF DONE TO CAR. [ @summit1g ]", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_summit1g-{width}x{height}.jpg", "viewer_count" 32512, "language" "en", "game_id" "32982"} {"user_id" "43691", "user_name" "Faker", "id" "40808182557", "user_login" "faker", "started_at" "2021-03-01T10:06:15Z", "tag_ids" ["ab2975e3-b9ca-4b1a-a93e-fb61a5d5c3a4"], "game_name" "League of Legends", "title" "T1 Faker Bubblicious! Enjoy my Zoe!", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_faker-{width}x{height}.jpg", "viewer_count" 27641, "language" "ko", "game_id" "21779"} {"user_id" "124425627", "user_name" "LPL", "id" "40807540493", "user_login" "lpl", "started_at" "2021-03-01T07:59:29Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039" "36a89a80-4fcd-4b74-b3d2-2c6fd9b30c95"], "game_name" "League of Legends", "title" "RW vs. EDG | FPX vs. JDG - Week 7 Day 1 | LPL Spring Split (2021)", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_lpl-{width}x{height}.jpg", "viewer_count" 24229, "language" "en", "game_id" "21779"} {"user_id" "50988750", "user_name" "stylishnoob4", "id" "40807477277", "user_login" "stylishnoob4", "started_at" "2021-03-01T07:45:48Z", "tag_ids" ["6ba1d230-e52f-4d81-b1e0-41f25a8a9f5d"], "game_name" "Apex Legends", "title" "[DTN] マスター詐欺", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_stylishnoob4-{width}x{height}.jpg", "viewer_count" 22086, "language" "ja", "game_id" "511224"} {"user_id" "49207184", "user_name" "fps_shaka", "id" "41881370638", "user_login" "fps_shaka", "started_at" "2021-03-01T08:13:45Z", "tag_ids" ["6ba1d230-e52f-4d81-b1e0-41f25a8a9f5d"], "game_name" "Apex Legends", "title" "[DTN] 卒業おめでとう", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_fps_shaka-{width}x{height}.jpg", "viewer_count" 15250, "language" "ja", "game_id" "511224"} {"user_id" "148057505", "user_name" "괴물쥐123", "id" "41881312142", "user_login" "tmxk319", "started_at" "2021-03-01T07:58:48Z", "tag_ids" ["ab2975e3-b9ca-4b1a-a93e-fb61a5d5c3a4"], "game_name" "League of Legends", "title" "승격전 v v _ _ _ ", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_tmxk319-{width}x{height}.jpg", "viewer_count" 12733, "language" "ko", "game_id" "21779"} {"user_id" "499830014", "user_name" "djrayraytaiwan", "id" "41881740702", "user_login" "djrayraytaiwan", "started_at" "2021-03-01T10:08:01Z", "tag_ids" ["d81d54c8-d705-4df6-aaf0-01d715c1dbcc" "9f1b01a8-87b9-4e25-94de-8705c1c1f4dc" "338d7a92-8bcc-429e-a30c-9f1c41a2d79a" "55afc9b3-67c9-46a0-aaad-d2fc65202f1b" "6ea6bca4-4712-4ab9-a906-e3336a9d8039"], "game_name" "Music", "title" "SPACECRAFT - LiveStream with RayRay! (Monday, 6:00-9:00pm. Taiwan Standard Time, GMT+8)", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_djrayraytaiwan-{width}x{height}.jpg", "viewer_count" 11408, "language" "en", "game_id" "26936"} {"user_id" "181077473", "user_name" "Gaules", "id" "40808401101", "user_login" "gaules", "started_at" "2021-03-01T10:45:39Z", "tag_ids" ["39ee8140-901a-4762-bfca-8260dea1310f"], "game_name" "Counter-Strike: Global Offensive", "title" "TeamOne vs WinStrike Snow Sweet Snow 2 - siga @gaules nas redes sociais", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_gaules-{width}x{height}.jpg", "viewer_count" 11028, "language" "pt", "game_id" "32399"} {"user_id" "30104304", "user_name" "Maximilian_DOOD", "id" "41880668750", "user_login" "maximilian_dood", "started_at" "2021-03-01T06:01:34Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039"], "game_name" "Resident Evil Outbreak File #2", "title" "RESIDENT EVIL OUTBREAK Online w/YoVG !ads !nzxt (2-28)", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_maximilian_dood-{width}x{height}.jpg", "viewer_count" 11024, "language" "en", "game_id" "13961"} {"user_id" "50597026", "user_name" "Ponce", "id" "41256948236", "user_login" "ponce", "started_at" "2021-03-01T09:40:27Z", "tag_ids" ["6f655045-9989-4ef7-8f85-1edcec42d648"], "game_name" "Just Chatting", "title" "PONCE - Culture & Plaisir !motg !prog !mdf [20h30 : Gartic Phone - 22h30 : FIFA Club Pro] | !boutique !youtube !replay", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_ponce-{width}x{height}.jpg", "viewer_count" 10733, "language" "fr", "game_id" "509658"} {"user_id" "138111494", "user_name" "LEGOO", "id" "41881880190", "user_login" "legoo", "started_at" "2021-03-01T10:56:00Z", "tag_ids" ["f08d5873-f0c7-4912-94ba-a41933b4c141"], "game_name" "VALORANT", "title" "VALORANT BAKANI! !çekiliş !yemeksepeti | insta:semihslvi", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_legoo-{width}x{height}.jpg", "viewer_count" 9966, "language" "tr", "game_id" "516575"} {"user_id" "11897156", "user_name" "roflgator", "id" "41879578494", "user_login" "roflgator", "started_at" "2021-03-01T04:03:46Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039"], "game_name" "Grand Theft Auto V", "title" "(NoPixel) Polish Robert, dealing with insane monsters and people", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_roflgator-{width}x{height}.jpg", "viewer_count" 9298, "language" "en", "game_id" "32982"} {"user_id" "64581694", "user_name" "Rogue", "id" "41880024862", "user_login" "rogue", "started_at" "2021-03-01T04:46:23Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039"], "game_name" "Apex Legends", "title" "NRG Rogue // #1 Ranked Grinder // Follow Twitter: @TTrebb - Tiktok: @TwitchRogue", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_rogue-{width}x{height}.jpg", "viewer_count" 8907, "language" "en", "game_id" "511224"} {"user_id" "103825127", "user_name" "풍월량", "id" "41881922686", "user_login" "hanryang1125", "started_at" "2021-03-01T11:10:02Z", "tag_ids" ["ab2975e3-b9ca-4b1a-a93e-fb61a5d5c3a4"], "game_name" "Just Chatting", "title" " 풍월량", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_hanryang1125-{width}x{height}.jpg", "viewer_count" 8758, "language" "ko", "game_id" "509658"} {"user_id" "139470326", "user_name" "한동숙", "id" "41881894718", "user_login" "handongsuk", "started_at" "2021-03-01T11:00:54Z", "tag_ids" ["ab2975e3-b9ca-4b1a-a93e-fb61a5d5c3a4"], "game_name" "Just Chatting", "title" "월요일", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_handongsuk-{width}x{height}.jpg", "viewer_count" 8665, "language" "ko", "game_id" "509658"} {"user_id" "24765850", "user_name" "餐餐自由配", "id" "41880796190", "user_login" "blusewilly_retry", "started_at" "2021-03-01T06:19:49Z", "tag_ids" ["74c92063-a389-4fd2-8460-b1bb82b04ec7"], "game_name" "Home Sweet Home", "title" "【魯蛋】月初閒閒 3/1", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_blusewilly_retry-{width}x{height}.jpg", "viewer_count" 8345, "language" "zh", "game_id" "8828"} {"user_id" "43102846", "user_name" "Shaunz", "id" "41256847884", "user_login" "shaunz", "started_at" "2021-03-01T09:02:37Z", "tag_ids" ["6f655045-9989-4ef7-8f85-1edcec42d648"], "game_name" "Teamfight Tactics", "title" "SHAUNZ - TRAINING FINALS EU J-6 !worlds", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_shaunz-{width}x{height}.jpg", "viewer_count" 7818, "language" "fr", "game_id" "513143"} {"user_id" "41314239", "user_name" "dafran", "id" "40807547837", "user_login" "dafran", "started_at" "2021-03-01T08:00:45Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039"], "game_name" "VALORANT", "title" "ROAD TO RADIANT DUELIST ACTIVATED", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_dafran-{width}x{height}.jpg", "viewer_count" 7801, "language" "en", "game_id" "516575"} {"user_id" "30816637", "user_name" "AdmiralBulldog", "id" "40807613805", "user_login" "admiralbulldog", "started_at" "2021-03-01T08:14:33Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039"], "game_name" "Dota 2", "title" "BASED strim [A] @AdmiralBulldog", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_admiralbulldog-{width}x{height}.jpg", "viewer_count" 7660, "language" "en", "game_id" "29595"} {"user_id" "160504245", "user_name" "39daph", "id" "41881338446", "user_login" "39daph", "started_at" "2021-03-01T08:05:04Z", "tag_ids" ["6ea6bca4-4712-4ab9-a906-e3336a9d8039"], "game_name" "Art", "title" "lord", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_39daph-{width}x{height}.jpg", "viewer_count" 7006, "language" "en", "game_id" "509660"}], "pagination" {"cursor" "eyJiIjp7IkN1cnNvciI6ImV5SnpJam96TWpVeE1pNHlNak0zT1RFMk5qZzBOelVzSW1RaU9tWmhiSE5sTENKMElqcDBjblZsZlE9PSJ9LCJhIjp7IkN1cnNvciI6ImV5SnpJam8zTURBMkxqRXlPVE15TnpBek16azNNaXdpWkNJNlptRnNjMlVzSW5RaU9uUnlkV1Y5In19"}}
+clj꞉twitchapi꞉> 
+(get-channel-info 26490481)
+{"data" [{"broadcaster_id" "26490481", "broadcaster_login" "summit1g", "broadcaster_name" "summit1g", "broadcaster_language" "en", "game_id" "32982", "game_name" "Grand Theft Auto V", "title" "charles. NoPixel 3.0. NEW STUFF DONE TO CAR. [ @summit1g ]"}]}
+clj꞉twitchapi꞉> 
+(get-user 26490481)
+{"data" [{"offline_image_url" "https://static-cdn.jtvnw.net/jtv_user_pictures/4f915056-3bba-4072-b83e-49151c657417-channel_offline_image-1920x1080.png", "view_count" 426804671, "id" "26490481", "profile_image_url" "https://static-cdn.jtvnw.net/jtv_user_pictures/99aa4739-21d6-40af-86ae-4b4d3457fce4-profile_image-300x300.png", "display_name" "summit1g", "type" "", "broadcaster_type" "partner", "created_at" "2011-12-01T06:33:31.487567Z", "login" "summit1g", "description" "I'm a variety streamer(kind of). Been streaming 8 years(another number to change every year).I'm 100% better than you at shooting and puzzle games.@summit1g via Twitter."}]}
+clj꞉twitchapi꞉> 
+#'influencerstracker.core/create-influencers-table!
+clj꞉influencerstracker.core꞉> 
+(create-influencers-table!)
+(0)
+clj꞉influencerstracker.core꞉> 
+(#'influencerstracker.core/create-influencer #'influencerstracker.core/find-influencers #'influencerstracker.core/influencers-count #'influencerstracker.core/influencer-by-id #'influencerstracker.core/influencer-order-by-timestamp #'influencerstracker.core/influencer-last-7-days #'influencerstracker.core/change-timestamp)
+clj꞉influencerstracker.core꞉> 
+#'twitchapi/get-streams-top-id
+clj꞉twitchapi꞉> 
+(get-streams-top-id)
+"43691"
+clj꞉twitchapi꞉> 
+(get-channel-info 43691)
+{"data" [{"broadcaster_id" "43691", "broadcaster_login" "faker", "broadcaster_name" "Faker", "broadcaster_language" "ko", "game_id" "21779", "game_name" "League of Legends", "title" "T1 Faker Bubblicious! Enjoy my Zoe!"}]}
+clj꞉twitchapi꞉> 
+(get-streams-user 43691)
+{"data" [{"user_id" "43691", "user_name" "Faker", "id" "40808182557", "user_login" "faker", "started_at" "2021-03-01T10:06:15Z", "tag_ids" ["ab2975e3-b9ca-4b1a-a93e-fb61a5d5c3a4"], "game_name" "League of Legends", "title" "T1 Faker Bubblicious! Enjoy my Zoe!", "type" "live", "thumbnail_url" "https://static-cdn.jtvnw.net/previews-ttv/live_user_faker-{width}x{height}.jpg", "viewer_count" 31738, "language" "ko", "game_id" "21779"}], "pagination" {}}
+clj꞉twitchapi꞉> 
+; Execution error (PSQLException) at org.postgresql.jdbc.PgPreparedStatement/executeQuery (PgPreparedStatement.java:109).
+; No results were returned by the query.
+clj꞉influencerstracker.core꞉> 
+({:count 1})
+clj꞉influencerstracker.core꞉> 
+({:id 1, :user_id "43691", :username "Faker", :game "League of Legends", :views "31738", :language "ko", :timestamp #inst "2021-03-01T11:53:59.826389000-00:00"})
+clj꞉influencerstracker.core꞉> 
+({:id 1, :user_id "43691", :username "Faker", :game "League of Legends", :views "31738", :language "ko", :timestamp #inst "2021-03-01T11:53:59.826389000-00:00"})
+clj꞉influencerstracker.core꞉> 
+#'influencerstracker.core/set-interval
+clj꞉influencerstracker.core꞉> 
+(def job (set-interval #(println "hello") 1000))
+#'influencerstracker.core/job
+clj꞉influencerstracker.core꞉> 
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+(future-cancel job)
+hello
+hello
+hello
+hello
+hello
+hello
+true
+clj꞉influencerstracker.core꞉> 
+#'influencerstracker.core/set-interval
+clj꞉influencerstracker.core꞉> 
+; Execution error (PSQLException) at org.postgresql.jdbc.PgPreparedStatement/executeQuery (PgPreparedStatement.java:109).
+; No results were returned by the query.
+clj꞉influencerstracker.core꞉> 
+({:count 2})
+clj꞉influencerstracker.core꞉> 
+({:id 1, :user_id "43691", :username "Faker", :game "League of Legends", :views "31738", :language "ko", :timestamp #inst "2021-03-01T11:53:59.826389000-00:00"} {:id 2, :user_id "26490481", :username "summit1g", :game "Grand Theft Auto V", :views "31717", :language "en", :timestamp #inst "2021-03-01T12:05:01.168394000-00:00"})
 clj꞉influencerstracker.core꞉> 

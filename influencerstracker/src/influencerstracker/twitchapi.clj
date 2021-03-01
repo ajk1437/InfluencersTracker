@@ -31,6 +31,18 @@
                 :Authorization (str "Bearer " auth/access_token)
                 :content-type auth/content-type}}))))
 
+(defn get-top-game-name []
+  (get-in (get-top-games) ["data" 0 "name"]))
+
+(defn get-game-by-id [id]
+  (json/read-str
+   (:body
+    (http/get (str baseURL "games?id=" id)
+              {:headers
+               {:client-id auth/client-id
+                :Authorization (str "Bearer " auth/access_token)
+                :content-type auth/content-type}}))))
+
 (defn search-categories [category]
   (json/read-str
    (:body
@@ -61,11 +73,17 @@
 (defn get-streams-user [name]
   (json/read-str
    (:body
-    (http/get (str baseURL "streams?user_login=" name)
+    (http/get (str baseURL "streams?user_id=" name)
               {:headers
                {:client-id auth/client-id
                 :Authorization (str "Bearer " auth/access_token)
                 :content-type auth/content-type}}))))
+
+(defn get-stream-viewcount []
+  (get-in (get-streams-user (get-streams-top-id)) ["data" 0 "viewer_count"]))
+
+(defn get-stream-language []
+  (get-in (get-streams-user (get-streams-top-id)) ["data" 0 "language"]))
 
 (defn get-streams-top []
   (json/read-str
@@ -75,6 +93,18 @@
                {:client-id auth/client-id
                 :Authorization (str "Bearer " auth/access_token)
                 :content-type auth/content-type}}))))
+
+(defn get-streams-top-id []
+  (get-in (get-streams-top) ["data" 0 "user_id"]))
+
+(defn get-streams-top-name []
+  (get-in (get-streams-top) ["data" 0 "user_name"]))
+
+(defn get-streams-top-gamename []
+  (get-in (get-streams-top) ["data" 0 "game_name"]))
+
+(defn get-streams-top-view []
+  (get-in (get-streams-top) ["data" 0 "game_name"]))
 
 (defn get-channel-info [id]
   (json/read-str
