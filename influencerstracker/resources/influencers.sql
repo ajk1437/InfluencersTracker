@@ -1,4 +1,4 @@
--- name: create-influencer
+-- name: create-influencer! 
 -- create infulencer
 INSERT INTO influencers
 ( user_id, username, game, views, language, timestamp)
@@ -37,3 +37,17 @@ WHERE timestamp >= CURRENT_DATE - INTERVAL '7 day';
 UPDATE influencers
 SET timestamp = timestamp - INTERVAL '30 day'
 WHERE id = :id
+
+-- name: influencer-with-biggest-live-views
+-- Find influencer by username.
+SELECT username, MAX(views) as views
+FROM influencers
+GROUP BY username
+ORDER BY views DESC;
+
+-- name: game-rank-1
+-- Number of times rank 1 game 
+SELECT game, COUNT(user_id) as count
+FROM influencers
+GROUP BY game
+ORDER BY count DESC;

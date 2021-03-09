@@ -6,4 +6,7 @@
                  [yesql "0.5.3"]
                  [org.clojure/java.jdbc "0.7.9"]
                  [org.postgresql/postgresql "42.2.6"]
-                 [clj-time "0.15.2"]])
+                 [compojure "1.6.1"]
+                 [ring/ring-jetty-adapter "1.2.1"]
+                 [hiccup "1.0.5"]]
+  :main influencerstracker.core)

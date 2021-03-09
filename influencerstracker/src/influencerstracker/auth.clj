@@ -1,4 +1,4 @@
-(ns auth
+(ns influencerstracker.auth
   (:require [clojure.data.json :as json]
             [clj-http.client :as http]
             [clojure.string :as s]))
