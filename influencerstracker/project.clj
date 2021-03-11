@@ -8,5 +8,7 @@
                  [org.postgresql/postgresql "42.2.6"]
                  [compojure "1.6.1"]
                  [ring/ring-jetty-adapter "1.2.1"]
-                 [hiccup "1.0.5"]]
+                 [hiccup "1.0.5"]
+                 [hiccup-table "0.2.0"]
+                 [clj-time "0.15.2"]]
   :main influencerstracker.core)

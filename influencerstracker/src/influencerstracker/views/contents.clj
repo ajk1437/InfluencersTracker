@@ -4,10 +4,7 @@
         [influencerstracker.twitchapi :refer :all]
         [yesql.core :refer [defquery defqueries]]))
 
-(defn index []
-  [:div {:id "content"}
-   [:h1 {:class "text-success"} "Hello Hiccup " (influencerstracker.twitchapi/get-streams-top-name) ]
-   [:h2 (find-influencers)]])
+;;(declare label text-field radio-button email-field password-field check-box)
 
 (defn hello []
   [:div {:class "well"}
@@ -45,12 +42,6 @@
   [:div {:ng-controller "PaginationCtrl" :class "well"}
    [:pre "[Browser] Current page: {{currentPage}}. [Server] {{partial}}"]
    [:pagination {:total-items "totalItems" :page "currentPage" :on-select-page "displayPartial(page)"}]])
-
-(defn parse-integer [s]
-  (Integer. (re-find  #"\d+" s)))
-
-(defn page [id]
-  (influencer-by-id {:id (parse-integer id)}))
 
 (defn not-found []
   [:div {:class "well"}

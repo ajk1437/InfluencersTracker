@@ -6,7 +6,7 @@ VALUES (:user_id, :username, :game, :views, :language, CURRENT_TIMESTAMP)
 
 -- name: find-influencers
 -- Find influencers
-SELECT *
+SELECT username, game, views, timestamp
 FROM influencers
 
 -- name: influencers-count
